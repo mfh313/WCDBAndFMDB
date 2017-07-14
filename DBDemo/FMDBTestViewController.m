@@ -122,8 +122,10 @@
 - (void)onClickInsertData
 {
     if ([_db open]) {
+        static int idx = 1;
         NSString *inSertSql = @"INSERT INTO mafanghua (name,near,nearest) VALUES (?,?,?)";
-        if ([_db executeUpdate:inSertSql,@"ms",@"xxx",@"sdadsad"]) {
+        NSString *name = [NSString stringWithFormat:@"mafanghua%d",idx++];
+        if ([_db executeUpdate:inSertSql,name,@"xxx",@"sdadsad"]) {
             NSLog(@"插入成功");
             
             [_db close];
