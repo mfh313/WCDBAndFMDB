@@ -9,23 +9,63 @@
 /* Begin PBXBuildFile section */
 		AC3286461F18BD3D000C3E40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3286451F18BD3D000C3E40 /* main.m */; };
 		AC3286491F18BD3D000C3E40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3286481F18BD3D000C3E40 /* AppDelegate.m */; };
-		AC32864C1F18BD3D000C3E40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC32864B1F18BD3D000C3E40 /* ViewController.m */; };
 		AC32864F1F18BD3D000C3E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC32864D1F18BD3D000C3E40 /* Main.storyboard */; };
 		AC3286511F18BD3D000C3E40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3286501F18BD3D000C3E40 /* Assets.xcassets */; };
 		AC3286541F18BD3D000C3E40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3286521F18BD3D000C3E40 /* LaunchScreen.storyboard */; };
+		AC3286681F18BDF1000C3E40 /* FMDBTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC32865E1F18BDF1000C3E40 /* FMDBTestViewController.m */; };
+		AC32866B1F18BDF1000C3E40 /* WCDBTestViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC3286641F18BDF1000C3E40 /* WCDBTestViewController.mm */; };
+		AC32866C1F18BDF1000C3E40 /* WCDemoORM.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC3286661F18BDF1000C3E40 /* WCDemoORM.mm */; };
+		AC3286711F18BE9F000C3E40 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC32866D1F18BE9F000C3E40 /* AFNetworking.framework */; };
+		AC3286721F18BE9F000C3E40 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC32866D1F18BE9F000C3E40 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC3286731F18BE9F000C3E40 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC32866E1F18BE9F000C3E40 /* FMDB.framework */; };
+		AC3286741F18BE9F000C3E40 /* FMDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC32866E1F18BE9F000C3E40 /* FMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC3286751F18BE9F000C3E40 /* WCDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC32866F1F18BE9F000C3E40 /* WCDB.framework */; };
+		AC3286761F18BE9F000C3E40 /* WCDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC32866F1F18BE9F000C3E40 /* WCDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC3286771F18BE9F000C3E40 /* YTKNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3286701F18BE9F000C3E40 /* YTKNetwork.framework */; };
+		AC3286781F18BE9F000C3E40 /* YTKNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC3286701F18BE9F000C3E40 /* YTKNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC32867C1F18BEB3000C3E40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC32867B1F18BEB3000C3E40 /* UIKit.framework */; };
+		AC32867E1F18BEBF000C3E40 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC32867D1F18BEBF000C3E40 /* libz.tbd */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC3286791F18BE9F000C3E40 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC3286721F18BE9F000C3E40 /* AFNetworking.framework in Embed Frameworks */,
+				AC3286741F18BE9F000C3E40 /* FMDB.framework in Embed Frameworks */,
+				AC3286781F18BE9F000C3E40 /* YTKNetwork.framework in Embed Frameworks */,
+				AC3286761F18BE9F000C3E40 /* WCDB.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AC3286411F18BD3D000C3E40 /* DBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3286451F18BD3D000C3E40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC3286471F18BD3D000C3E40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC3286481F18BD3D000C3E40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AC32864A1F18BD3D000C3E40 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AC32864B1F18BD3D000C3E40 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AC32864E1F18BD3D000C3E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC3286501F18BD3D000C3E40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3286531F18BD3D000C3E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC3286551F18BD3D000C3E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC32865D1F18BDF1000C3E40 /* FMDBTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBTestViewController.h; sourceTree = "<group>"; };
+		AC32865E1F18BDF1000C3E40 /* FMDBTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBTestViewController.m; sourceTree = "<group>"; };
+		AC32865F1F18BDF1000C3E40 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		AC3286631F18BDF1000C3E40 /* WCDBTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDBTestViewController.h; sourceTree = "<group>"; };
+		AC3286641F18BDF1000C3E40 /* WCDBTestViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WCDBTestViewController.mm; sourceTree = "<group>"; };
+		AC3286651F18BDF1000C3E40 /* WCDemoORM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDemoORM.h; sourceTree = "<group>"; };
+		AC3286661F18BDF1000C3E40 /* WCDemoORM.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WCDemoORM.mm; sourceTree = "<group>"; };
+		AC32866D1F18BE9F000C3E40 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		AC32866E1F18BE9F000C3E40 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = Carthage/Build/iOS/FMDB.framework; sourceTree = "<group>"; };
+		AC32866F1F18BE9F000C3E40 /* WCDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WCDB.framework; path = Carthage/Build/iOS/WCDB.framework; sourceTree = "<group>"; };
+		AC3286701F18BE9F000C3E40 /* YTKNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YTKNetwork.framework; path = Carthage/Build/iOS/YTKNetwork.framework; sourceTree = "<group>"; };
+		AC32867B1F18BEB3000C3E40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AC32867D1F18BEBF000C3E40 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +73,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC32867E1F18BEBF000C3E40 /* libz.tbd in Frameworks */,
+				AC32867C1F18BEB3000C3E40 /* UIKit.framework in Frameworks */,
+				AC3286711F18BE9F000C3E40 /* AFNetworking.framework in Frameworks */,
+				AC3286731F18BE9F000C3E40 /* FMDB.framework in Frameworks */,
+				AC3286771F18BE9F000C3E40 /* YTKNetwork.framework in Frameworks */,
+				AC3286751F18BE9F000C3E40 /* WCDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				AC3286431F18BD3D000C3E40 /* DBDemo */,
+				AC32867A1F18BEB3000C3E40 /* Frameworks */,
 				AC3286421F18BD3D000C3E40 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,8 +107,13 @@
 			children = (
 				AC3286471F18BD3D000C3E40 /* AppDelegate.h */,
 				AC3286481F18BD3D000C3E40 /* AppDelegate.m */,
-				AC32864A1F18BD3D000C3E40 /* ViewController.h */,
-				AC32864B1F18BD3D000C3E40 /* ViewController.m */,
+				AC32865D1F18BDF1000C3E40 /* FMDBTestViewController.h */,
+				AC32865E1F18BDF1000C3E40 /* FMDBTestViewController.m */,
+				AC3286631F18BDF1000C3E40 /* WCDBTestViewController.h */,
+				AC3286641F18BDF1000C3E40 /* WCDBTestViewController.mm */,
+				AC3286651F18BDF1000C3E40 /* WCDemoORM.h */,
+				AC3286661F18BDF1000C3E40 /* WCDemoORM.mm */,
+				AC32865F1F18BDF1000C3E40 /* Macro.h */,
 				AC32864D1F18BD3D000C3E40 /* Main.storyboard */,
 				AC3286501F18BD3D000C3E40 /* Assets.xcassets */,
 				AC3286521F18BD3D000C3E40 /* LaunchScreen.storyboard */,
@@ -79,6 +131,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AC32867A1F18BEB3000C3E40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC32866D1F18BE9F000C3E40 /* AFNetworking.framework */,
+				AC32866E1F18BE9F000C3E40 /* FMDB.framework */,
+				AC32866F1F18BE9F000C3E40 /* WCDB.framework */,
+				AC3286701F18BE9F000C3E40 /* YTKNetwork.framework */,
+				AC32867D1F18BEBF000C3E40 /* libz.tbd */,
+				AC32867B1F18BEB3000C3E40 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +154,8 @@
 				AC32863D1F18BD3D000C3E40 /* Sources */,
 				AC32863E1F18BD3D000C3E40 /* Frameworks */,
 				AC32863F1F18BD3D000C3E40 /* Resources */,
+				AC3286791F18BE9F000C3E40 /* Embed Frameworks */,
+				AC32867F1F18BFFB000C3E40 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -110,7 +177,7 @@
 				TargetAttributes = {
 					AC3286401F18BD3D000C3E40 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 2C97V99SA2;
+						DevelopmentTeam = 5SLPAU8R7K;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -146,14 +213,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC32867F1F18BFFB000C3E40 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/WCDB.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC32863D1F18BD3D000C3E40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC32864C1F18BD3D000C3E40 /* ViewController.m in Sources */,
+				AC32866C1F18BDF1000C3E40 /* WCDemoORM.mm in Sources */,
 				AC3286491F18BD3D000C3E40 /* AppDelegate.m in Sources */,
+				AC32866B1F18BDF1000C3E40 /* WCDBTestViewController.mm in Sources */,
 				AC3286461F18BD3D000C3E40 /* main.m in Sources */,
+				AC3286681F18BDF1000C3E40 /* FMDBTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -263,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -275,8 +361,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2C97V99SA2;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xu yiheng (8BZ9HQD624)";
+				DEVELOPMENT_TEAM = 5SLPAU8R7K;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DBDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.mafanghua.DBDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,8 +380,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2C97V99SA2;
+				DEVELOPMENT_TEAM = 5SLPAU8R7K;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DBDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.mafanghua.DBDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +413,7 @@
 				AC32865A1F18BD3D000C3E40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
