@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-
-#pragma mark - FMDBTestViewController
 @interface FMDBTestViewController : UIViewController
 
 @end
