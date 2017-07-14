@@ -52,8 +52,8 @@
     
     _dbPath = [MFDocumentDirectory stringByAppendingPathComponent:@"mafanghua"];
     
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    [fileManager removeItemAtPath:_dbPath error:nil];
+//    NSFileManager *fileManager = [NSFileManager defaultManager];
+//    [fileManager removeItemAtPath:_dbPath error:nil];
     
     _db =[FMDatabase databaseWithPath:_dbPath];
     
@@ -121,7 +121,18 @@
 
 - (void)onClickInsertData
 {
-    
+    if ([_db open]) {
+        NSString *inSertSql = @"INSERT INTO mafanghua (name,near,nearest) VALUES (?,?,?)";
+        if ([_db executeUpdate:inSertSql,@"ms",@"xxx",@"sdadsad"]) {
+            NSLog(@"插入成功");
+            
+            [_db close];
+        }
+        else
+        {
+            NSLog(@"插入失败");
+        }
+    }
 }
 
 - (void)onClickQuery
