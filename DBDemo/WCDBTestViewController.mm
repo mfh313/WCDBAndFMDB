@@ -82,7 +82,7 @@
 
 - (void)onClickInsertData
 {
-    WCDemoORM *object = [WCDemoORM new];
+    WCDemoORM *object = [[WCDemoORM alloc] init];
     object.name = @"1222";
     object.code = @"object";
     object.token = @"token";
