@@ -25,6 +25,7 @@
 		AC3286781F18BE9F000C3E40 /* YTKNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC3286701F18BE9F000C3E40 /* YTKNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC32867C1F18BEB3000C3E40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC32867B1F18BEB3000C3E40 /* UIKit.framework */; };
 		AC32867E1F18BEBF000C3E40 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC32867D1F18BEBF000C3E40 /* libz.tbd */; };
+		AC9E6A7B1F298389006C077F /* SearchBarTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9E6A7A1F298389006C077F /* SearchBarTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +67,8 @@
 		AC3286701F18BE9F000C3E40 /* YTKNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YTKNetwork.framework; path = Carthage/Build/iOS/YTKNetwork.framework; sourceTree = "<group>"; };
 		AC32867B1F18BEB3000C3E40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AC32867D1F18BEBF000C3E40 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AC9E6A791F298389006C077F /* SearchBarTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarTestViewController.h; sourceTree = "<group>"; };
+		AC9E6A7A1F298389006C077F /* SearchBarTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				AC3286641F18BDF1000C3E40 /* WCDBTestViewController.mm */,
 				AC3286651F18BDF1000C3E40 /* WCDemoORM.h */,
 				AC3286661F18BDF1000C3E40 /* WCDemoORM.mm */,
+				AC9E6A791F298389006C077F /* SearchBarTestViewController.h */,
+				AC9E6A7A1F298389006C077F /* SearchBarTestViewController.m */,
 				AC32865F1F18BDF1000C3E40 /* Macro.h */,
 				AC32864D1F18BD3D000C3E40 /* Main.storyboard */,
 				AC3286501F18BD3D000C3E40 /* Assets.xcassets */,
@@ -177,7 +182,7 @@
 				TargetAttributes = {
 					AC3286401F18BD3D000C3E40 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = HLCNX67M9C;
+						DevelopmentTeam = 2C97V99SA2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -237,6 +242,7 @@
 			files = (
 				AC32866C1F18BDF1000C3E40 /* WCDemoORM.mm in Sources */,
 				AC3286491F18BD3D000C3E40 /* AppDelegate.m in Sources */,
+				AC9E6A7B1F298389006C077F /* SearchBarTestViewController.m in Sources */,
 				AC32866B1F18BDF1000C3E40 /* WCDBTestViewController.mm in Sources */,
 				AC3286461F18BD3D000C3E40 /* main.m in Sources */,
 				AC3286681F18BDF1000C3E40 /* FMDBTestViewController.m in Sources */,
@@ -361,9 +367,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 970194621@qq.com (S3DLFG99WD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HLCNX67M9C;
+				DEVELOPMENT_TEAM = 2C97V99SA2;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -372,7 +378,7 @@
 				INFOPLIST_FILE = DBDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.mafanghua.dbtestt;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.eeka.dbdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -383,7 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HLCNX67M9C;
+				DEVELOPMENT_TEAM = 2C97V99SA2;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,7 +398,7 @@
 				INFOPLIST_FILE = DBDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.mafanghua.dbtestt;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.eeka.dbdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};

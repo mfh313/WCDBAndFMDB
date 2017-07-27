@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -79,6 +79,7 @@
                     <connections>
                         <segue destination="Fyq-v2-1ry" kind="relationship" relationship="viewControllers" id="yJE-qJ-HWk"/>
                         <segue destination="NIH-7F-zkB" kind="relationship" relationship="viewControllers" id="Aho-5t-FXe"/>
+                        <segue destination="kPU-Rn-wR0" kind="relationship" relationship="viewControllers" id="vje-vx-T5f"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -101,6 +102,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9c-jA-fR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1070" y="365"/>
+        </scene>
+        <!--SearchBar-->
+        <scene sceneID="LCq-82-tsL">
+            <objects>
+                <navigationController id="kPU-Rn-wR0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SearchBar" id="mdT-jV-fos"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pD3-UV-n5E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gcj-Ol-bPu" kind="relationship" relationship="rootViewController" id="mxi-Dy-d8P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZ9-0R-c0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="1373"/>
+        </scene>
+        <!--Search Bar Test View Controller-->
+        <scene sceneID="aug-iD-iLS">
+            <objects>
+                <viewController id="Gcj-Ol-bPu" customClass="SearchBarTestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eHH-Cv-FSK"/>
+                        <viewControllerLayoutGuide type="bottom" id="OzG-ae-Wn3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ym-54-zmu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="7cd-pQ-B4e"/>
+                    <navigationItem key="navigationItem" id="9qU-78-gYm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GrW-7X-tuQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="1346"/>
         </scene>
     </scenes>
 </document>
